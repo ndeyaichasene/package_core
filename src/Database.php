@@ -32,8 +32,8 @@ class Database
         if (self::$instance === null) {
             try {
                 $dsn = match (self::$driver) {
-                    'pgsql' => "pgsql:host=" . self::$host .self::$database,
-                    'mysql' => "mysql:host=" . self::$host .self::$database . ";charset=utf8mb4",
+                    'pgsql' => "pgsql:host=" . self::$host.";dbname=" .self::$database,
+                    'mysql' => "mysql:host=" . self::$host.";database=" .self::$database . ";charset=utf8mb4",
                     default => throw new PDOException("Driver non supporté : " . self::$driver),
                 };
 
