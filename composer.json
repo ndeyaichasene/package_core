@@ -1,0 +1,19 @@
+{
+    "name": "ndeyaichasene/core",
+    "description": "Package PHP réutilisable pour les applications MVC",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\Core\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ndeye Aissatou Sene",
+            "email": "ndeyaichasene@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3"
+    }
+}
