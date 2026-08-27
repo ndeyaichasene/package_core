@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Core;
+namespace Aicha\core;
 use PDO;
 use PDOException;
 use PDOStatement;
